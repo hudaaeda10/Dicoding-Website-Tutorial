@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event World</title>
+    <style>
+        .contents {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid black;
+            border-width: 2px;
+            padding: 15px;
+        }
+
+        #generateButton {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contents" align="center" hidden>
+        <button id="incrementButton">Tekan Aku :)</button>
+        <h3>Kamu sudah menekan tombol di atas sebanyak <span id="count">0</span></h3>
+    </div>
+
+    <script>
+        function increment() {
+            document.getElementById('count').innerText++;
+            if (document.getElementById('count').innerText == 7) {
+                const h4 = document.createElement('h4');
+                h4.innerText = 'Selamat anda mendapatkan kejutan';
+                const image = document.createElement('img');
+                image.setAttribute('src', 'https://i.ibb.co/0V49VRZ/catto.jpg');
+                const contents = document.querySelector('.contents');
+                contents.appendChild(h4).appendChild(image);
+            }
+        }
+
+        function welcome() {
+            alert('sim salabim muncullah elemen-elemen HTML');
+            const konten = document.querySelector('.contents');
+            konten.removeAttribute('hidden');
+        }
+        // document.body.onload = welcome;
+        // document.getElementById('incrementButton').onclick = increment;
+
+        // menggunakan addEventListener
+        window.addEventListener('load', welcome);
+        window.addEventListener('click', increment);
+    </script>
+</body>
+
+</html>

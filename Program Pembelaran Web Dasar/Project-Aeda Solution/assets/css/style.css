@@ -1,0 +1,512 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #1b1b1b;
+}
+
+/* navbar */
+header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.img-profile {
+  flex-grow: 1;
+  margin: 40px 80px;
+}
+
+nav {
+  flex-grow: 2;
+  margin-top: 70px;
+  margin-left: 800px;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+li a {
+  color: #dfdfdf;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.button {
+  background-color: #52adee;
+  padding: 8px 25px;
+  border-radius: 5px;
+  box-shadow: 0 3px 9px 3px rgba(47, 90, 211, 0.3);
+}
+
+/* content - jumbotron */
+#home {
+  margin-bottom: 110px;
+}
+#home .content {
+  display: flex;
+  width: 100%;
+  height: 0 auto;
+}
+
+#home .text-content {
+  margin-left: 80px;
+  flex-grow: 1;
+  margin-top: 60px;
+}
+
+#home .text-content h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+  width: 8em;
+  height: auto;
+  margin-bottom: -10px;
+}
+
+#home .text-content p {
+  color: #6c7882;
+  font-size: 16px;
+  width: 24em;
+  margin-bottom: 40px;
+}
+
+#home .img-illustration {
+  flex: 1;
+  margin-right: 100px;
+}
+
+#home .content a {
+  text-decoration: none;
+  color: white;
+}
+
+/* service */
+#services .text-header {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#services .text-header h2 {
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+#services .text-header p {
+  color: #6c7882;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin-left: 25%;
+  margin-top: -15px;
+  width: 50%;
+}
+
+#services .content {
+  display: flex;
+  width: 100%;
+  height: 0 auto;
+}
+
+#services .content .img-illustration {
+  flex-grow: 1;
+  margin-left: 80px;
+}
+
+#services .content .img-illustration .background {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(180deg);
+  left: 0;
+}
+
+#services .content .box-content {
+  margin-right: 50px;
+  flex: 1;
+  margin-right: 100px;
+}
+
+.box {
+  background-color: #232323;
+  width: 500px;
+  height: 200px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.box:nth-child(2) {
+  margin-left: -200px;
+}
+
+.box .text-content {
+  float: left;
+  width: 75%;
+}
+
+.box .text-content h2 {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.box .text-content p {
+  color: #c4c4c4;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: -10px;
+}
+
+.box .img-content {
+  float: right;
+}
+
+.box .img-content img {
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.box .img-content p {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+/* examples */
+#examples .background {
+  background-color: #2f2f2f;
+  margin-top: 140px;
+  padding-bottom: 50px;
+}
+
+#examples .text-header {
+  margin: auto;
+  padding-top: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+#examples .text-header h2 {
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+#examples .text-header p {
+  color: #6c7882;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin-left: 25%;
+  margin-top: -15px;
+  width: 50%;
+}
+
+#examples .img-examples {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#examples .img-examples .img-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#examples .img-examples .img-row {
+  display: flex;
+  flex-direction: row;
+}
+
+#examples .img-examples img {
+  flex-grow: 1;
+  width: 300px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+}
+
+/* portofolio */
+#portofolio .text-header {
+  margin: auto;
+  padding-top: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+#portofolio .text-header h2 {
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+#portofolio .text-header p {
+  color: #6c7882;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin-left: 25%;
+  margin-top: 10px;
+  width: 50%;
+}
+
+#portofolio .content-portofolio {
+  display: flex;
+}
+
+#portofolio .content-portofolio .box {
+  margin-top: 50px;
+}
+
+#portofolio .content-portofolio .box:nth-child(1) {
+  flex-grow: 1;
+  margin-right: 100px;
+  margin-left: 300px;
+  width: 100px;
+}
+#portofolio .content-portofolio .box:nth-child(2) {
+  flex-grow: 1;
+  margin-left: 100px;
+  margin-right: 300px;
+  width: 100px;
+}
+
+#portofolio .content-portofolio .box p {
+  color: #c4c4c4;
+}
+
+#portofolio .content-portofolio .box h2 {
+  color: white;
+}
+
+#portofolio .content-portofolio .box .caption {
+  color: #c4c4c4;
+  font-size: 12px;
+}
+
+#portofolio .content-portofolio .box img {
+  position: relative;
+  left: 400px;
+  top: -60px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.arrow-right {
+  border: 3px solid #62c2fc;
+  padding: 10px 50px;
+  padding-bottom: -10px;
+  border-radius: 40px;
+  margin-right: 150px;
+  cursor: pointer;
+}
+.arrow-left {
+  border: 3px solid #62c2fc;
+  padding: 10px 50px;
+  padding-bottom: -10px;
+  border-radius: 40px;
+  cursor: pointer;
+  /* flex-grow: 1; */
+}
+
+.arrow-left img {
+  transform: rotate(180deg);
+}
+
+.arrow img {
+  width: 40px;
+}
+
+/* contact */
+#contact .background {
+  background-color: #2f2f2f;
+  margin-top: 140px;
+  padding-bottom: 50px;
+}
+
+#contact .text-header {
+  margin: auto;
+  padding-top: 50px;
+  width: 50%;
+  text-align: center;
+}
+
+#contact .text-header h2 {
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+#contact .text-header p {
+  color: #6c7882;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.content-contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#contact .input-content input {
+  display: block;
+  margin-bottom: 20px;
+  background-color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  padding: 10px 0;
+  padding-left: 36px;
+  padding-right: 400px;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+#contact .input-content textarea {
+  background-color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  border-radius: 10px;
+  padding: 10px 0;
+  padding-left: 36px;
+}
+
+input::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+textarea::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+#contact .content-contact .button {
+  width: 600px;
+}
+
+#contact .content-contact .button a {
+  text-decoration: none;
+  color: white;
+  margin: 0 200px;
+}
+
+#contact .illustration-content {
+  margin-left: 100px;
+}
+
+#profile .card {
+  background-color: #2f2f2f;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid #2f2f2f;
+  border-radius: 20px;
+  margin-top: 100px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#profile .card img {
+  width: 150px;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#profile .card .profile-content {
+  justify-content: center;
+  margin: 0 auto;
+  width: 450px;
+  padding-top: 20px;
+}
+
+#profile .card .profile-content table {
+  margin-left: 100px;
+}
+
+#profile .card .profile-content table th {
+  color: white;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+#profile .card .profile-content table td {
+  color: #c4c4c4;
+}
+
+/* footer */
+footer {
+  margin-top: 100px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #6c7882;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.footer {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 79px;
+}
+
+.footer .content-left {
+  margin-right: 500px;
+}
+
+.footer .content-left p {
+  width: 250px;
+  color: #c4c4c4;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.content-right {
+  display: flex;
+}
+
+.content-right .list-content {
+  margin-right: 200px;
+  margin-top: -20px;
+}
+
+.content-right .list-content h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.content-right .list-content p {
+  color: #c4c4c4;
+  font-weight: 300;
+}
+
+.copyright {
+  color: #9e9a9a;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 50px;
+}
